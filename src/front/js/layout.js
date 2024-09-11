@@ -8,6 +8,7 @@ import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
 import { Login } from "./pages/login";
 import { Signup } from "./pages/signup"
+import Private from "./pages/private";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -33,6 +34,7 @@ const Layout = () => {
                         <Route element={<Login />} path="/login"/>
                         <Route element={<Signup />} path="/signup"/>
                         <Route element={<h1>Not found!</h1>} />
+                        <Route element={<Private />} path="/private" />
                     </Routes>
                     <Footer />
                 </ScrollToTop>
